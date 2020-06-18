@@ -1,21 +1,29 @@
-/* Variables */
+/** Variables */
 :root {
-  --white: #ffffff;
+	--white: #ffffff;
+	--blueviolet: #c2beff;
+	--bluepurple-light: #7b73f7;
+	--bluepurple-medium: #8078fb;
+	--bluepurple-medium-dark: #6159e5;
+	--blue-gray: #a4a2af;
+	--purplish: #784eeb;
+	/*! This is way too many blue/purple shades */
+	--blueish-btn: #7e76f9;
 }
 
-/* Fonts */
+/** Fonts */
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Lato', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap");
 
-/* Reset */
+/** Reset */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-/* General */
+/** Body & Container */
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -32,6 +40,36 @@ body {
   background-position: top right;
 }
 
+/** Inherited General Values*/
+h2 {
+	color: var(--purplish);
+	font-family: 'Lato', sans-serif;
+	font-size: .7em;
+	font-weight: 100;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 600;
+	line-height: 1.35;
+}
+
+p {
+	color: var(--blue-gray);
+	font-size: .5em;
+	font-weight: 200;
+}
+
+.p-bigger-than-h2 {
+	font-size: 1em;
+
+}
+
+button {
+
+}
+
+/** Header */
 header {
   display: flex;
   width: 80vw;
@@ -39,11 +77,12 @@ header {
 }
 
 .logo {
-  background-image: url(../img/computer.svg);
+  background-image: url(../img/analysis.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 1em;
-  height: 1em;
+	background-size: contain;
+	/*! What's the rubbish below? */
+  /* width: 1em;
+  height: auto; */
   padding: 1em;
 }
 
@@ -66,6 +105,7 @@ li {
   color: var(--white);
 }
 
+/** Main */
 main {
   display: flex;
   flex-direction: column;
@@ -74,9 +114,12 @@ main {
   margin: 1em;
 }
 
+.div-social-media {
+	display: flex;
+}
+
+/*! This must be a phantom element */
 .bigrectangle {
-	width: 500px;
-	height: 500px;
 	background-color: red;
 }
 
@@ -90,6 +133,20 @@ main {
   width: 300px;
 }
 
+
+/** Newsletter signup */
+.div-newsletter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-email {
+	display: flex;
+	justify-content: center;
+}
+
+/** Footer */
 footer {
   display: flex;
   justify-content: center;
@@ -127,6 +184,7 @@ footer {
   margin-bottom: 0.75em;
 }
 
+/* SVGs background bottom */
 .footer-shape-1,
 .footer-shape-2 {
   width: 100%;
