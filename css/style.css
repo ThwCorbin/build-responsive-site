@@ -1,15 +1,14 @@
 /*! hard work beats talent when talent doesn't work hard*/
 /** Variables */
 :root {
-	--white: #ffffff;
-	--blueviolet: #c2beff;
-	--bluepurple-light: #7b73f7;
-	--bluepurple-medium: #8078fb;
-	--bluepurple-medium-dark: #6159e5;
+  --white: #ffffff;
+  --rose: #fc6681;
+	--blue-violet: #c2beff;
 	--blue-gray: #a4a2af;
-	--purplish: #784eeb;
-	/*! This is way too many blue/purple shades */
+	--blue-purple-light: #8078fb;
 	--blueish-btn: #7e76f9;
+	--purplish: #784eeb;
+	--blue-purple-dark: #6159e5;
 	--black: #000000;
 }
 
@@ -40,9 +39,10 @@ body {
   background-image: url(../img/header-bg-shape.svg);
   background-repeat: no-repeat;
   background-position: top right;
+  background-size: 50vw;
 }
 
-/** Inherited General Values*/
+/** Sitewide Shared Values*/
 h2 {
 	color: var(--purplish);
 	font-family: 'Lato', sans-serif;
@@ -56,19 +56,32 @@ h3 {
 	line-height: 1.35;
 }
 
+h4 {
+  font-size: .6em;
+}
+
+.p-small {
+	font-size: .5em;
+}
+
 .p-gray {
 	color: var(--blue-gray);
-	font-size: .5em;
 	font-weight: 200;
 }
 
 .p-bigger-than-h2 {
 	font-size: 1em;
-
 }
 
 button {
-
+  width: 16em;
+  height: 3.5em;
+  color: var(--white);
+  font-size: .5em;
+  background-color: var(--blueish-btn);
+  border: .2em .4em solid var(--blue-gray);
+  border-radius: 4em;
+  margin: 2em 0;
 }
 
 /** Header */
@@ -82,10 +95,9 @@ header {
   background-image: url(../img/analysis.svg);
   background-repeat: no-repeat;
 	background-size: contain;
-	/*! What's the rubbish below? */
   /* width: 1em;
   height: auto; */
-  padding: 1em;
+  padding: 2em;
 }
 
 .logo-header {
@@ -119,17 +131,29 @@ main {
 /** Squares grid at top */
 .grid-top {
 	display: grid;
-	grid-row: 2;
-	grid-column: 2;
+	grid-template-rows: 25em 25em;
+  grid-template-columns: 25em 25em;
+  gap: 1em;
 }
 
-.square {
-	
-  max-width: 20em;
+.square-2 {
+  justify-self: flex-end;
+}
+
+.square-4 {
+  background-image: url(/img/biography-background.svg);
+  background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .div-social-media {
 	display: flex;
+}
+
+.icon-s-media {
+  width: auto;
+  height: 0.5em;
+  margin: 0.5em;
 }
 
 /*! This must be a phantom element */
@@ -141,6 +165,43 @@ main {
 .img-people-phone {
   width: 20em;
   height: auto;
+}
+
+/** Cards grid in middle top  */
+.grid-cards {
+  display: grid;
+  grid-template-rows: 15em 15em;
+  grid-template-columns: 12em 12em 12em;
+  gap: 3em;
+  background-image: url(/img/cards-background.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 10em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em;
+  background-color: var(--white);
+  border-radius: 5%;
+  box-shadow: .1em .1em .1em var(--blue-gray);
+}
+
+.card * {
+  margin: .5em 0;
+}
+
+.card img {
+  align-self: center;
+  width: 3em;
+}
+
+.btn-card {
+  width: 8em;
+  height: 2.5em;
+  margin: auto 1em 0 auto;
 }
 
 /** Newsletter signup */
@@ -184,12 +245,6 @@ footer {
   color: var(--white);
 }
 
-.icon-s-media {
-  width: auto;
-  height: 0.5em;
-  margin: 0.5em;
-}
-
 .p-links,
 .p-hours,
 .p-contact {
@@ -204,7 +259,11 @@ footer {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 15%;
-  right: 15%;
+  top: 150%;
   z-index: -1;
+}
+
+.footer-shape-2 {
+  left: 25%;
+  top: 155%;
 }
