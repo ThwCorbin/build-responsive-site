@@ -3,6 +3,7 @@
 :root {
   --white: #ffffff;
   --rose: #fc6681;
+  --blue-pale: #eceafe;
 	--blue-violet: #c2beff;
 	--blue-gray: #a4a2af;
 	--blue-purple-light: #8078fb;
@@ -87,7 +88,7 @@ button {
 /** Header */
 header {
   display: flex;
-  width: 80vw;
+  width: 65vw;
   margin: 2em 0;
 }
 
@@ -95,8 +96,6 @@ header {
   background-image: url(../img/analysis.svg);
   background-repeat: no-repeat;
 	background-size: contain;
-  /* width: 1em;
-  height: auto; */
   padding: 2em;
 }
 
@@ -125,7 +124,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1em;
+  /* margin: 1em; */
 }
 
 /** Squares grid at top */
@@ -134,6 +133,20 @@ main {
 	grid-template-rows: 25em 25em;
   grid-template-columns: 25em 25em;
   gap: 1em;
+}
+
+.square-1 {
+  display: flex;
+}
+
+.div-top-social-media {
+  display: flex;
+  flex-direction: column;
+  justify-items: baseline;
+  height: 10em;
+  background-color: var(--blue-purple-light);
+  border: .2em dashed var(--rose);
+  margin: 4em 2em 0 0;
 }
 
 .square-2 {
@@ -167,15 +180,18 @@ main {
   height: auto;
 }
 
-/** Cards grid in middle top  */
-.grid-cards {
+/** Grid cards services  */
+.block-services {
+  background-image: url(/img/cards-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-services {
   display: grid;
   grid-template-rows: 15em 15em;
   grid-template-columns: 12em 12em 12em;
   gap: 3em;
-  background-image: url(/img/cards-background.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   margin-bottom: 10em;
 }
 
@@ -204,6 +220,62 @@ main {
   margin: auto 1em 0 auto;
 }
 
+/** Grid cards pricing  */
+.block-pricing {
+  background-color: var(--blue-pale);
+  min-width: 100%;
+  padding: 0 5em;
+  margin: 0 0 5em;
+}
+
+.h2-pricing {
+  margin: 3em 0 0;
+  text-align: center;
+}
+
+.h3-pricing {
+  margin: .5em 0 1.5em;
+  text-align: center;
+}
+
+.grid-pricing {
+  /* width: 80vw; */
+  display: grid;
+  grid-template-rows: 15em;
+  grid-template-columns: 12em 12em 12em;
+  /* justify-content: space-around; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 0 3em;
+}
+
+.card-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1.5em;
+  margin: 0 1em 1em;
+} 
+
+.h4-price {
+  font-size: .9em;
+  font-weight: 400;
+}
+
+.p-price-num {
+  color: var(--blue-purple-dark);
+}
+
+.btn-card-price {
+  width: 10em;
+  height: 3em;
+  margin: 1em 0;
+  /* color: var(--black); */
+  /* background-color: var(--white); */
+  border: 2em 4em solid var(--rose);
+}
+
 /** Newsletter signup */
 .div-newsletter {
 	display: flex;
@@ -216,8 +288,19 @@ main {
 }
 
 .form-email {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+	/* justify-content: space-between; */
+}
+
+input {
+  width: 20em;
+  height: 2em;
+  color: var(--blue-gray);
+  text-align: initial;
+  background-color: var(--blue-violet);
+  margin-right: 1em;
+  border: .1 solid var(--blue-pale);
 }
 
 /** Footer */
@@ -228,7 +311,7 @@ footer {
   margin-top: 5em;
   /* width: 100vw; */
   /* height: 15em; */
-  /* background-image: url(../img/footer-bg-shape-1.svg); */
+  /* background-image: url(/img/footer-bg-shape-1.svg); */
   /* background-repeat: no-repeat; */
   /* background-position: top; */
 }
@@ -259,11 +342,12 @@ footer {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 150%;
+  top: 200%;
+  clip: margin-box;
   z-index: -1;
 }
 
 .footer-shape-2 {
   left: 25%;
-  top: 155%;
+  top: 205%;
 }
