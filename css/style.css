@@ -192,9 +192,11 @@ main {
 /** Main section: Cards services ###############  */
 .block-services {
   min-width: 100%;
-  background-image: url(/img/cards-background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.div-h-services {
+  padding-left: 5em;
+  padding-bottom: 2em;
 }
 
 .grid-services {
@@ -202,6 +204,10 @@ main {
   grid-template-rows: 15em 15em;
   grid-template-columns: 12em 12em 12em;
   gap: 3em;
+  justify-content: center;
+  background-image: url(/img/cards-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 10em;
 }
 
