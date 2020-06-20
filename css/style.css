@@ -11,6 +11,7 @@
 	--blueish-btn: #7e76f9;
 	--purplish: #784eeb;
 	--blue-purple-dark: #6159e5;
+	--gray: #f6f6f8;
 	--black: #000000;
 }
 
@@ -240,8 +241,7 @@ main {
 .block-pricing {
   min-width: 100%;
   background-color: var(--blue-pale);
-  padding: 0 5em;
-  margin: 0 0 5em;
+  margin-bottom: 5em;
 }
 
 .h2-pricing {
@@ -260,6 +260,7 @@ main {
   grid-template-columns: 12em 12em 12em;
   background-repeat: no-repeat;
   background-size: contain;
+  justify-content: space-around;
   margin: 0 0 3em;
 }
 
@@ -268,8 +269,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0 1.5em;
-  margin: 0 1em 1em;
 } 
 
 .h4-price {
@@ -285,7 +284,12 @@ main {
   width: 10em;
   height: 3em;
   margin: 1em 0;
-  border: 2em 4em solid var(--rose);
+}
+
+.btn-card-price-clear {
+  color: var(--black);
+  background-color: transparent;
+  border: .2em solid var(--blueish-btn);
 }
 
 /** Newsletter signup ############### */
@@ -297,6 +301,7 @@ main {
 
 .p-newsletter {
 	font-weight: 200;
+  margin-bottom: .75em;
 }
 
 .form-email {
@@ -304,21 +309,29 @@ main {
   align-items: center;
 }
 
-input {
+#email {
   width: 20em;
   height: 2em;
   color: var(--blue-gray);
   text-align: initial;
-  background-color: var(--blue-violet);
+  background-color: var(--gray);
   margin-right: 1em;
   border: .1 solid var(--blue-pale);
+  border-radius: 3%;
+}
+
+.btn-newsletter {
+  width: 10em;
+  height: 3em;
+  margin: 1em 0;
 }
 
 /** Footer ############### */
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: var(--blue-purple-dark);
+  padding: 0 15em;
   margin-top: 5em;
   min-width: 100%;
 }
@@ -341,6 +354,15 @@ footer {
 	font-size: 0.75em;
 	color: var(--white);
   margin-bottom: 0.75em;
+}
+
+footer>div>ul>li {
+  font-size: .5em;
+  margin: .75em 0;
+}
+
+.ul-contact>li>img {
+  width: 1em;
 }
 
 /* Optional SVGs background in footer  */
