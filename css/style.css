@@ -1,5 +1,5 @@
 /*! hard work beats talent when talent doesn't work hard*/
-/** Variables */
+/** Variables ############### */
 :root {
   --white: #ffffff;
   --rose: #fc6681;
@@ -13,12 +13,12 @@
 	--black: #000000;
 }
 
-/** Fonts */
+/** Fonts ###############  */
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Lato', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap");
 
-/** Reset */
+/** Reset ###############  */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -43,7 +43,7 @@ body {
   background-size: 50vw;
 }
 
-/** Sitewide Shared Values*/
+/** Sitewide Shared Values ###############  */
 h2 {
 	color: var(--purplish);
 	font-family: 'Lato', sans-serif;
@@ -85,7 +85,7 @@ button {
   margin: 2em 0;
 }
 
-/** Header */
+/** Header ############### */
 header {
   display: flex;
   margin: 2em 0;
@@ -125,7 +125,7 @@ main {
   justify-content: center;
 }
 
-/** Main section: Squares about company */
+/** Main section: Squares about company ############### */
 .grid-top {
 	display: grid;
 	grid-template-rows: 25em 25em;
@@ -172,7 +172,7 @@ main {
   height: auto;
 }
 
-/** Main section: Cards services  */
+/** Main section: Cards services ###############  */
 .block-services {
   min-width: 100%;
   background-image: url(/img/cards-background.svg);
@@ -213,7 +213,7 @@ main {
   margin: auto 1em 0 auto;
 }
 
-/** Main section: Cards pricing */
+/** Main section: Cards pricing ############### */
 .block-pricing {
   min-width: 100%;
   background-color: var(--blue-pale);
@@ -232,11 +232,9 @@ main {
 }
 
 .grid-pricing {
-  /* width: 80vw; */
   display: grid;
   grid-template-rows: 15em;
   grid-template-columns: 12em 12em 12em;
-  /* justify-content: space-around; */
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 0 3em;
@@ -264,12 +262,10 @@ main {
   width: 10em;
   height: 3em;
   margin: 1em 0;
-  /* color: var(--black); */
-  /* background-color: var(--white); */
   border: 2em 4em solid var(--rose);
 }
 
-/** Newsletter signup */
+/** Newsletter signup ############### */
 .div-newsletter {
 	display: flex;
 	flex-direction: column;
@@ -283,7 +279,6 @@ main {
 .form-email {
   display: flex;
   align-items: center;
-	/* justify-content: space-between; */
 }
 
 input {
@@ -296,17 +291,11 @@ input {
   border: .1 solid var(--blue-pale);
 }
 
-/** Footer */
+/** Footer ############### */
 footer {
   display: flex;
   justify-content: center;
-  /* align-items: flex-start; */
   margin-top: 5em;
-  /* width: 100vw; */
-  /* height: 15em; */
-  /* background-image: url(/img/footer-bg-shape-1.svg); */
-  /* background-repeat: no-repeat; */
-  /* background-position: top; */
 }
 
 .ft-column {
@@ -329,7 +318,6 @@ footer {
   margin-bottom: 0.75em;
 }
 
-/* SVGs background bottom */
 .footer-shape-1,
 .footer-shape-2 {
   width: 100%;
