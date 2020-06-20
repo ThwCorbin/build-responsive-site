@@ -88,7 +88,6 @@ button {
 /** Header */
 header {
   display: flex;
-  width: 65vw;
   margin: 2em 0;
 }
 
@@ -124,15 +123,15 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin: 1em; */
 }
 
-/** Squares grid at top */
+/** Main section: Squares about company */
 .grid-top {
 	display: grid;
 	grid-template-rows: 25em 25em;
   grid-template-columns: 25em 25em;
   gap: 1em;
+  min-width: 100%;
 }
 
 .square-1 {
@@ -144,8 +143,6 @@ main {
   flex-direction: column;
   justify-items: baseline;
   height: 10em;
-  background-color: var(--blue-purple-light);
-  border: .2em dashed var(--rose);
   margin: 4em 2em 0 0;
 }
 
@@ -169,19 +166,15 @@ main {
   margin: 0.5em;
 }
 
-/*! This must be a phantom element */
-.bigrectangle {
-	background-color: red;
-}
-
 .img-girl-think,
 .img-people-phone {
   width: 20em;
   height: auto;
 }
 
-/** Grid cards services  */
+/** Main section: Cards services  */
 .block-services {
+  min-width: 100%;
   background-image: url(/img/cards-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -220,10 +213,10 @@ main {
   margin: auto 1em 0 auto;
 }
 
-/** Grid cards pricing  */
+/** Main section: Cards pricing */
 .block-pricing {
-  background-color: var(--blue-pale);
   min-width: 100%;
+  background-color: var(--blue-pale);
   padding: 0 5em;
   margin: 0 0 5em;
 }
