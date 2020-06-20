@@ -106,6 +106,10 @@ header {
   margin-right: 10%;
 }
 
+nav {
+  margin-right: 5em;
+}
+
 .ul-links-nav {
   display: flex;
   justify-content: space-between;
@@ -121,7 +125,7 @@ li {
   color: var(--white);
 }
 
-/** Main */
+/** Main ############### */
 main {
   display: flex;
   flex-direction: column;
@@ -134,12 +138,13 @@ main {
 	display: grid;
 	grid-template-rows: 25em 25em;
   grid-template-columns: 25em 25em;
-  gap: 1em;
+  /* gap: 1em; */
   min-width: 100%;
 }
 
 .square-1 {
   display: flex;
+  margin-top: 3em;
 }
 
 .div-top-social-media {
@@ -150,29 +155,37 @@ main {
   margin: 4em 2em 0 0;
 }
 
-.square-2 {
-  justify-self: flex-end;
-}
-
-.square-4 {
-  background-image: url(/img/biography-background.svg);
-  background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.div-social-media {
-	display: flex;
-}
-
 .icon-s-media {
   width: auto;
   height: 0.5em;
   margin: 0.5em;
 }
 
-.img-girl-think,
+.square-2 {
+  justify-self: flex-end;
+}
+
+.img-girl-think {
+  width: 18em;
+  height: auto;
+}
+
+.square-3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 5em;
+}
+
+.square-4 {
+  background-image: url(/img/biography-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4em 5em 0 4em;
+}
+
 .img-people-phone {
-  width: 20em;
+  width: 19em;
   height: auto;
 }
 
