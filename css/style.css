@@ -380,3 +380,32 @@ footer>div>ul>li {
   left: 25%;
   top: 205%;
 } */
+
+/** Media queries ############### */
+/** media greater than 1440px  */
+@media all and (min-width: 1440px) {
+  .logo-header {
+    margin-right: 0;
+    margin-left: 15%;
+  }
+  
+  nav {
+    margin-right: 20em;
+  }
+}
+
+/** media less than 1000px  */
+@media all and (max-width: 999px) {
+  
+  .logo-header {
+    margin-right: 35%;
+  }
+
+  nav {
+    margin-right: 0;
+  }
+
+  footer {
+    padding: 0;
+  }
+}
