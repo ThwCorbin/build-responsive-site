@@ -603,4 +603,11 @@ footer > div > ul > li {
   .card-price-2 {
     order: 1;
   }
+
+  /* Newsletter Section */
+  #email {
+    width: 18em;
+  }
+
+  
 }
