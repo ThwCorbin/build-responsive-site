@@ -356,12 +356,11 @@ footer > div > ul > li {
 /** media greater >= 1440px  */
 @media all and (min-width: 1440px) {
   .logo-header {
-    margin-right: 0;
-    margin-left: 15%;
+    margin-left: 15vw;
   }
 
   nav {
-    margin-right: 20em;
+    margin-right: 15em;
   }
 }
 
