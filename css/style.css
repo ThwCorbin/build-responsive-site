@@ -491,4 +491,23 @@ footer > div > ul > li {
 
 /** media less than 600px  */
 @media all and (max-width: 599px) {
+  /* Header */
+  .logo {
+    /* header & footer */
+    padding: 1.5em;
+  }
+
+  .logo-header {
+    margin-right: 0;
+  }
+
+  nav {
+    margin-right: 0;
+    margin-left: 6em;
+  }
+
+  .ul-links-nav li {
+    margin: 0.25em;
+    font-size: 0.5em;
+  }
 }
