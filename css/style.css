@@ -179,7 +179,7 @@ main {
 }
 
 .square-4 {
-  background-image: url(/img/biography-background.svg);
+  background-image: url(../img/biography-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4em 5em 0 4em;
@@ -206,7 +206,7 @@ main {
   grid-template-columns: 12em 12em 12em;
   gap: 3em;
   justify-content: center;
-  background-image: url(/img/cards-background.svg);
+  background-image: url(../img/cards-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 10em;
@@ -382,7 +382,7 @@ footer>div>ul>li {
 } */
 
 /** Media queries ############### */
-/** media greater than 1440px  */
+/** media greater >= 1440px  */
 @media all and (min-width: 1440px) {
   .logo-header {
     margin-right: 0;
@@ -409,3 +409,4 @@ footer>div>ul>li {
     padding: 0;
   }
 }
+
