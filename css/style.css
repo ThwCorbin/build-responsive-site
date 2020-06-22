@@ -492,6 +492,10 @@ footer > div > ul > li {
 /** media less than 600px  */
 @media all and (max-width: 599px) {
   /* Header */
+  header {
+    margin: 0.5em 0 0;
+  }
+
   .logo {
     /* header & footer */
     padding: 1.5em;
@@ -510,4 +514,43 @@ footer > div > ul > li {
     margin: 0.25em;
     font-size: 0.5em;
   }
+
+  /* Main section: Squares */
+  .grid-top {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  .square-1 {
+    margin-top: 1em;
+    margin-left: 5em;
+  }
+
+  .div-top-social-media {
+    margin-top: 4em;
+    margin-right: 0;
+  }
+
+  .square-2 {
+    display: none;
+  }
+
+  .square-3 {
+    order: 1;
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  .img-people-phone {
+    width: 10em;
+  }
+
+  .square-4 {
+    align-self: center;
+    margin: 0 8em 0 5.5em;
+  /* padding: 4em 5em 0 4em; */
+  padding: 1em;
+}
 }
