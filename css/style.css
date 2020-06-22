@@ -525,7 +525,7 @@ footer > div > ul > li {
 
   .square-1 {
     margin-top: 1em;
-    margin-left: 5em;
+    margin-left: 2em;
   }
 
   .div-top-social-media {
@@ -549,8 +549,8 @@ footer > div > ul > li {
 
   .square-4 {
     align-self: center;
-    margin: 0 8em 0 5.5em;
-    padding: 1em;
+    margin: 0 4em 0 4.5em;
+    padding: 0;
   }
 
   /* Main section: Cards services */
@@ -586,7 +586,7 @@ footer > div > ul > li {
   }
 
   .h3-pricing {
-    margin: 0 0 .5em;
+    margin: 0 0 0.5em;
   }
 
   .grid-pricing {
@@ -609,5 +609,20 @@ footer > div > ul > li {
     width: 18em;
   }
 
-  
+  /* Footer Section */
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    min-width: 100%;
+  }
+
+  .ft-column-links {
+    margin-left: 40vw;
+    margin-top: 0;
+  }
+
+  .div-ft-logo-social-media {
+    margin-bottom: 0.25em;
+  }
 }
