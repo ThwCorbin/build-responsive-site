@@ -550,7 +550,45 @@ footer > div > ul > li {
   .square-4 {
     align-self: center;
     margin: 0 8em 0 5.5em;
-  /* padding: 4em 5em 0 4em; */
-  padding: 1em;
-}
+    padding: 1em;
+  }
+
+    /* Main section: Cards services */
+    /* .block-services {
+      margin-top: 3em;
+    } */
+  
+    .grid-services {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1em;
+      /* grid-template-rows: 15em 15em 15em;
+      grid-template-columns: 12em 12em; */
+    }
+
+    .div-h-services {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    .card {
+      /* display: flex; */
+      /* flex-direction: column; */
+      align-items: center;
+      /* justify-content: flex-start; */
+      width: 13em;
+      padding: 1em;
+      margin-top: .5em;
+      /* background-color: var(--white); */
+      /* border-radius: 5%; */
+      /* box-shadow: 0.1em 0.1em 0.1em var(--blue-gray); */
+    }
+    
+    .card * {
+      margin: 0.5em 0;
+    }
 }
