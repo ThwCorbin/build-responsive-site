@@ -174,7 +174,7 @@ main {
   background-image: url(../img/biography-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 4em 5em 0 4em;
+  padding: 0 5em 0 4em;
 }
 
 /** Main section: Cards services ###############  */
@@ -255,7 +255,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 .5em 1em;
+  margin: 0 0.5em 1em;
 }
 
 .h4-price {
@@ -374,8 +374,19 @@ footer > div > ul > li {
     margin-right: 0;
   }
 
+  /* Main section: Squares about company */
+  .grid-top {
+    grid-template-rows: 20em 20em;
+    grid-template-columns: 20em 20em;
+    margin-bottom: 1em;
+  }
+
   .square-1 {
     margin-left: 1em;
+  }
+
+  .square-4 {
+    padding-top: 0;
   }
 
   footer {
@@ -385,11 +396,6 @@ footer > div > ul > li {
 
 /** media less than 768px  */
 @media all and (max-width: 767px) {
-  /* Header */
-  header {
-    margin: 1em 0 0.5em;
-  }
-
   /* Main section: Squares about company */
   .grid-top {
     grid-template-rows: 15em 15em;
@@ -417,7 +423,6 @@ footer > div > ul > li {
   }
 
   .square-4 {
-    /* padding: 4em 5em 0 4em; */
     padding: 2em 4em 0 1em;
   }
 
@@ -462,22 +467,13 @@ footer > div > ul > li {
 /** media less than 600px  */
 @media all and (max-width: 599px) {
   /* Header */
-  header {
-    margin: 0.5em 0 0;
-  }
-
-  .logo {
-    /* header & footer */
-    padding: 1.5em;
-  }
-
   .logo-header {
-    margin-right: 0;
+    padding-left: 1em;
   }
 
   nav {
     margin-right: 0;
-    margin-left: 6em;
+    margin-left: 5em;
   }
 
   .ul-links-nav li {
@@ -489,7 +485,6 @@ footer > div > ul > li {
   .grid-top {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
   }
 
@@ -571,7 +566,7 @@ footer > div > ul > li {
   }
 
   .card-price-2 {
-    order: 1;
+    order: -1;
   }
 
   /* Newsletter Section */
